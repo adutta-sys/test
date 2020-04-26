@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="MassOpportunityEditController">
+    <aura:attribute name="OpportunityRec" type="Opportunity"/>
+    <aura:attribute name="OpportunityList" type="Opportunity[]"/>
+    <aura:attribute name="ListofFields" type="String" default="Name,Amount,AccountId"/>
+    <aura:attribute name="AccountId" type="Id"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.initializeRecords}"/>
+    
+</aura:component>
