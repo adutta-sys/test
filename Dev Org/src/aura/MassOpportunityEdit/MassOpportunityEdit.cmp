@@ -3,6 +3,7 @@
     <aura:attribute name="OpportunityList" type="Opportunity[]"/>
     <aura:attribute name="ListofFields" type="String" default="Name,Amount,AccountId"/>
     <aura:attribute name="AccountId" type="Id"/>
+    <aura:attribute name="testGit" type="String" description="" />
     
     <aura:handler name="init" value="{!this}" action="{!c.initializeRecords}"/>
     
